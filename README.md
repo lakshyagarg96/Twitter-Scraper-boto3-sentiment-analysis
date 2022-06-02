@@ -11,6 +11,12 @@ From this analysis, we aim at enabling the decision-making process in the follow
 A brand wants to know when the fans are most likely to purchase the timberwolves merchandise 
 Help advertisement investors to determine whether  to sponsor the team
 
+## Steps to Run
+Post running the Sentiment_Analysis.ipynb notebook do the following
+  1. Set up your access_token, access_token_secret, consumer_key, and consumer_secret variables
+  2. Set up your AWS bucket and pass your aws_access_key_id, aws_secret_access_key, region_name, and aws_session_token
+  3. Run the .ipynb notebook tweets with sentiment associated to them would be stored in your S3 bucket
+
 ## Process Flow
 Tweets are scraped from specific user-defined Twitter handles.
 The scraped data is cleaned to remove emojis & special characters.
@@ -20,7 +26,7 @@ Neutral
 Negative
 Post sentiment analysis the data is stored in an S3 bucket using BOTO 3 for storage.
 
-
+_* All the above defined procceses run through the Sentiment_Analysis.ipynb notebook _
 ## References
 
 https://www.nba.com/timberwolves
